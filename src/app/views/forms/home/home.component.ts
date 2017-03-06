@@ -15,9 +15,6 @@ export class HomeComponent implements OnInit {
     name: 'Model Driven Forms',
     path: 'model-driven-forms'
   }, {
-    name: 'Validators',
-    path: 'validators'
-  }, {
     name: 'Custom Validators ',
     path: 'custom-validators'
   }];

@@ -4,7 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { TemplateDrivenFormsComponent } from './template-driven-forms/template-driven-forms.component';
 import { ModelDrivenFormsComponent } from './model-driven-forms/model-driven-forms.component';
-import { ValidatorsComponent } from './validators/validators.component';
+
 import { CustomValidatorsComponent } from './custom-validators/custom-validators.component';
 
 const routes: Routes = [{
@@ -23,9 +23,6 @@ const routes: Routes = [{
     component: ModelDrivenFormsComponent
   },
   {
-    path: 'validators',
-    component: ValidatorsComponent
-  },{
     path: 'custom-validators',
     component: CustomValidatorsComponent
   }]
