@@ -12,4 +12,15 @@ export class AttributeDirectivesComponent implements OnInit {
   ngOnInit() {
   }
 
+  cone=true;
+  ctwo=true;
+  style="italic";
+  size="30px";
+  toggle(){
+    this.cone=!this.cone;
+    this.ctwo=!this.ctwo;
+    
+
+  }
+
 }

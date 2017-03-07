@@ -1,3 +1,17 @@
-<p>
-  attribute-directives works!
-</p>
+<div class="container-fluid">
+
+
+    <h2> ngClass </h2>
+    <h3> Changing the font color and backgorund color on Toggle </h3>
+
+    <p [ngClass]="{classOne:cone, classTwo:ctwo}"> ngClass Paragraph </p>
+
+    <button class="btn btn-success" (click)='toggle()'> Toggle Class </button>
+    <hr>
+    <h2> ngStyle </h2>
+    <h3> Applying the inline style to the below text </h3>
+
+    <p [ngStyle]="{'font-style': style , 'font-size': size}"> ngStyle Paragraph </p>
+
+
+</div>
