@@ -1,0 +1,57 @@
+<div class="container-fluid">
+
+    <h2> ngIf </h2>
+
+    <div *ngIf="applyNgif"> I am Comming Using ngIf </div>
+
+    <button type="button" class="btn" (click)="toggleNgif()"> Toggle ngIf </button>
+
+    <code>
+      <h3> Sample Html </h3>
+      <div>
+       {{smapleSDone}}
+      </div>
+      <div>
+       {{smapleSDtwo}}
+      </div>
+    </code>
+
+    <code>
+      <h3> Sample Typescript </h3>
+          <div> toggleNgif()
+               
+          </div>
+      <div>
+        this.applyNgif=!this.applyNgif;
+      </div>
+    </code>
+
+</div>
+
+<div class="container-fluid">
+    <h3> ngSwitch </h3>
+    <label>Enter a number from 1,2 or 3</label>
+    <input type="number" name="tabNo" (keyup)="switchTab($event)">
+
+    <div [ngSwitch]="tab"> Whenever a tab number is slected Conent is Shown
+        <p *ngSwitchCase="1">Tab content 1</p>
+        <p *ngSwitchCase="2">Tab content 2</p>
+        <p *ngSwitchCase="3">Tab content 3
+        </p>
+        <p *ngSwitchDefault>Not Matced</p>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <h3> ngFor </h3>
+
+    <label>Enter a color to be appeneded in list</label>
+    <input type="text" name="appendListItem" #myColor>
+    <button type="button" class="btn btn-success" (click)="appendColor($event, myColor.value)"> + </button>
+
+    <ul> List of colors using ngFor
+        <li *ngFor="let item of items; let i = index">
+            {{i}} {{item}}
+        </li>
+    </ul>
+</div>

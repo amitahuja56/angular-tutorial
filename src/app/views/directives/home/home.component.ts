@@ -11,5 +11,13 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  
+   title = 'Directives';
+  submenu = [{
+    name: 'Structural Directives',
+    path: 'structural-directives'
+  }, {
+    name: 'Attribute Directives',
+    path: 'attribute-directives'
+  }];
 }
