@@ -11,5 +11,14 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
   }
+  
+  title = 'Pipes';
+  submenu = [{
+    name: 'Predefined Pipes',
+    path: 'predefined-pipes'
+  }, {
+    name: 'Custom Pipes',
+    path: 'custom-pipes'
+  }];
 
 }

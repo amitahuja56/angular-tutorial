@@ -1,0 +1,20 @@
+<div class="container-fluid">
+    <h2>Predefined Pipes </h2>
+
+    <h4> Enter string </h4>
+
+    <input type="text" #str class="form-control" [(ngModel)]="sampleText">
+
+    <h3> Uppercase ( string | uppercase )</h3>
+
+    <p> {{sampleText | uppercase}}</p>
+
+    <hr>
+
+    <h3> Uppercase ( string | slice: 6 )</h3>
+
+    <p> {{sampleText | slice:6}}</p>
+
+    <hr>
+
+</div>

@@ -1,0 +1,18 @@
+<div class="container-fluid">
+    <h2>Custom Pipes </h2>
+
+    <h3>Power Booster</h3>
+    <div class="form-group">
+        <label> Number</label>
+        <input class="form-control" type="number" #num>
+    </div>
+    <div class="form-group">
+        <label> Power To </label>
+        <input class="form-control" type="number" #pow>
+    </div>
+    <button type="button" (click)="exponentValues($event, num.value, pow.value)" class="btn btn-success"> Get Result </button>
+    <p>Super power boost: {{ number | exponentialStrength: toPower}}</p>
+
+    <hr>
+
+</div>
